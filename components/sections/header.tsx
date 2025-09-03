@@ -32,7 +32,7 @@ export const Header = () => {
           scrolled && "bg-background/50 backdrop-blur-3xl",
         )}
       >
-        <div className="mx-auto px-12 items-center justify-center transition-all duration-300">
+        <div className="mx-auto px-2 md:px-12 items-center justify-center transition-all duration-300">
           <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
             <div className="flex w-full items-center justify-between gap-12 lg:w-auto">
               <Link

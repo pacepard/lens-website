@@ -36,14 +36,14 @@ export default function HeroSection() {
         <section>
           <div className="relative pt-44 pb-44">
             <div className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"></div>
-            <div className="mx-auto px-12">
-              <div className="flex  md:gap-x-8 sm:mx-auto lg:mt-0 lg:mr-auto">
+            <div className="mx-auto px-6 md:px-12">
+              <div className="flex flex-col md:flex-row md:gap-x-8 sm:mx-auto lg:mt-0 lg:mr-auto">
                 
                 <TextEffect
                   preset="fade-in-blur"
                   speedSegment={0.3}
                   as="h1"
-                  className="mt-8 max-w-[1200px] text-5xl font-medium items-start md:text-9xl lg:mt-16"
+                  className="mt-8 md:max-w-[1200px] text-5xl font-medium items-start md:text-9xl lg:mt-16"
                 >
                   {LandingPageData.hero.heading}
                 </TextEffect>
@@ -60,16 +60,16 @@ export default function HeroSection() {
                     },
                     ...transitionVariants,
                   }}
-                  className="mt-12 flex flex-1 items-center"
+                  className="mt-6 md:mt-12 flex flex-1 items-center"
                 >
-                  <div className="flex-1 flex flex-col ">
+                  <div className="flex-1 ">
                     <TextEffect
                       per="line"
                       preset="fade-in-blur"
                       speedSegment={0.3}
                       delay={0.5}
                       as="p"
-                      className="mt-40 max-w-2xl text-3xl text-left"
+                      className="text-lg md:text-3xl text-left md:mt-40"
                     >
                       {LandingPageData.hero.subheading}
                     </TextEffect>
