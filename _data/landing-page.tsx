@@ -54,7 +54,7 @@ export const LandingPageData = {
     },
   },
   footer: {
-    description: "Lens - Conversations on Facts",
+   description: "Lens - Conversations on Facts\nThe open-source ML toolkit thats helps you stop guessing, build and have conversations on facts. Start contributing!",
     buitBy: "Made with ❤️ by Pacepard",
     copyright: ". All rights reserved.",
     ownedBy: "Pacepard",

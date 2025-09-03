@@ -18,7 +18,7 @@ export function Footer() {
               app designed to help job seekers ace technical interviews by
               providing real-time assistance with coding questions. */}
 
-            <p className="text-sm text-neutral-400 leading-relaxed max-w-sm">
+            <p className="text-sm whitespace-pre-line text-neutral-400 leading-relaxed max-w-sm">
               {LandingPageData.footer.description}
             </p>
 
