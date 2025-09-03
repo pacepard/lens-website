@@ -10,15 +10,15 @@ export const LandingPageData = {
     logo: "/lens-logo",
     items: [
       {
-        label: "Blog",
-        href: "/blog",
+        label: "Roadmap",
+        href: "https://github.com/pacepard/lens.md",
       },
       {
         label: "Contributors",
-        href: "/contributors",
+        href: "https://github.com/pacepard",
       },
     ],
-      button: {
+    button: {
       id: "01",
       href: "/get-lens",
       text: "Try Private Alpha",
@@ -26,8 +26,8 @@ export const LandingPageData = {
     },
   },
   hero: {
-    heading: "Lens - a simple way to share hyper-local information",
-    subheading: "",
+    heading: "The open-source ML toolkit for policies",
+    subheading: "Helping you stop guessing, build and have conversations on facts.",
     badge: "",
     button: {
       id: "01",
@@ -36,9 +36,25 @@ export const LandingPageData = {
       variant: "default" as const,
     },
   },
-  uishowcase: {},
+  uishowcase: {
+    heading: "We’re excited about the future 😍",
+    subheading:
+        "We are building a mobile app that transforms policies and local information into simple, fact-based conversations. Instead of wading through long documents or confusing posts, you get clarity through engaging dialogue formats. ",
+    image: {
+      src: "/og-image.png",
+      alt: "innovation image",
+      width: 1248,
+      height: 765,
+    },
+    button: {
+      id: "01",
+      text: "Start now",
+      href: "https://github.com/pacepard",
+      variant: "default" as const,
+    },
+  },
   footer: {
-    description: "",
+    description: "Lens - Conversations on Facts",
     buitBy: "Made with ❤️ by Pacepard",
     copyright: ". All rights reserved.",
     ownedBy: "Pacepard",
@@ -70,7 +86,7 @@ export const LandingPageData = {
       },
     ],
     items: {
-      group: "resources",
+      group: "Resources",
       items: [
         { href: "/roadmap", label: "Roadmap" },
         { href: "/privacy", label: "Privacy policy" },
@@ -78,7 +94,7 @@ export const LandingPageData = {
       ],
     },
     items2: {
-      group: "company",
+      group: "Product",
       items: [
         { href: "/contributors", label: "Company" },
         { href: "/about", label: "About" },
