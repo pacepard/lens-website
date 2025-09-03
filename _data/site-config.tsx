@@ -5,7 +5,7 @@ export const siteConfig = {
   getStartedUrl: "https://www.pacepard.com/get-lens",
   ogImage: "/blocks/og-image.png",
   description:
-    "Pacepard helps African tech talents learn and grow by doing. We support the development of Open Source Software that solves problems faced daily by Africans, and we are creating points of entry into machine learning research.",
+    "Lens is an open-source mobile app that transforms policies and local information into simple, fact-based conversations. Instead of wading through long documents or confusing posts, users get clarity through engaging dialogue formats they can trust.",
   links: {
     creator: "@pacepard",
     twitter: "https://x.com/pacepard",
