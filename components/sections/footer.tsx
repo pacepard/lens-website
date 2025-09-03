@@ -4,8 +4,8 @@ import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/shared/social-icon
 
 export function Footer() {
   return (
-    <footer className="mx-auto px-0 md:px-12 w-full relative">
-      <div className="  px-6 py-12 border-t border-neutral-800 mt-36 pt-8 ">
+    <footer className="mx-auto px-0 md:px-12 w-full relative bg-[#0a0a0a]">
+      <div className="  px-6 py-12 border-t border-neutral-800 mt-36 ">
         <div className="flex mt-6 flex-col md:flex-row md:flex-wrap lg:flex-row lg:justify-between gap-10 lg:gap-24">
           {/* Brand Section */}
           <div className="space-y-4">
@@ -111,7 +111,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex ">
-          <span className="text-[6.2rem] md:text-[12rem] lg:text-[18.5rem] font-bold select-none leading-none bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 dark:from-neutral-950 to-neutral-200 dark:to-neutral-800 inset-x-0">
+          <span className="text-[6.2rem] md:text-[12rem] lg:text-[18.5rem] font-bold select-none leading-none bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 dark:from-green-950 to-neutral-200 dark:to-neutral-800 inset-x-0">
              Lens.
           </span>
         </div>

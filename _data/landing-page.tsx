@@ -41,7 +41,7 @@ export const LandingPageData = {
     subheading:
         "We are building a mobile app that transforms policies and local information into simple, fact-based conversations. Instead of wading through long documents or confusing posts, you get clarity through engaging dialogue formats. ",
     image: {
-      src: "/og-image.png",
+      src: "/blocks/lens.png",
       alt: "innovation image",
       width: 1248,
       height: 765,

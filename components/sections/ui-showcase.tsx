@@ -7,11 +7,11 @@ import Image from "next/image";
 export default function UIShwocase() {
   return (
     <section className="bg-white py-16 pt-20 md:py-32 dark:bg-[#171717]">
-      <div className="mx-auto px-6 sm:px-12 md:px-24 space-y-8 md:space-y-12">
+      <div className="mx-auto mb-40 px-6 sm:px-12 md:px-24 space-y-8 md:space-y-12">
         {/* Image */}
-        <div className="flex justify-center items-center">
+        <div className="mt-40 flex justify-center items-center">
           <Image
-            className="rounded-(--radius) grayscale"
+            className="rounded-(--radius)"
             src={LandingPageData.uishowcase.image.src}
             alt={LandingPageData.uishowcase.image.alt}
             height={LandingPageData.uishowcase.image.height}
