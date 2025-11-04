@@ -17,11 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${useLensFont.variable} antialiased`}
-      ><AppProvider>
-        {children}
+        suppressHydrationWarning
+      >
+        <AppProvider>
+          {children}
         </AppProvider>
       </body>
     </html>
