@@ -9,52 +9,33 @@ interface IToggle {
 }
 
 const ThemeToggle = (data: IToggle) => {
-const {className} = data
-const [mounted, setMounted] = useState(false)
-const { theme, setTheme } = useTheme()
+  const { className } = data
+  const [mounted, setMounted] = useState(false)
+  const { resolvedTheme, setTheme } = useTheme()
 
   useEffect(() => {
-   setMounted(true)
+    setMounted(true)
   }, [])
 
-  if(!mounted) {
+  if (!mounted) {
     return null
   }
 
-  const options = [
-    { value: "light", icon: <Sun className="h-4 w-4" />, label: "Light" },
-    { value: "dark", icon: <Moon className="h-4 w-4" />, label: "Dark" },
-  ] as const
+  const toggleTheme = () => {
+    setTheme(resolvedTheme === "dark" ? "light" : "dark")
+  }
 
   return (
-    <fieldset className={`inline-flex h-8 items-center rounded-full border bg-muted p-1 shadow-sm ${className}`}>
-      <legend className="sr-only">Select theme</legend>
-      {options.map((opt) => (
-        <label
-          key={opt.value}
-          className={`
-            flex h-6 w-6 items-center justify-center rounded-full
-            cursor-pointer transition-colors
-            ${
-              theme === opt.value
-                ? "bg-background text-foreground shadow-sm"
-                : "text-muted-foreground hover:text-foreground"
-            }
-          `}
-        >
-          <input
-            type="radio"
-            name="theme"
-            value={opt.value}
-            checked={theme === opt.value}
-            onChange={() => setTheme(opt.value)}
-            className="sr-only"
-          />
-          {opt.icon}
-          <span className="sr-only">{opt.label}</span>
-        </label>
-      ))}
-    </fieldset>
+    <button
+      type="button"
+      onClick={toggleTheme}
+      aria-label={resolvedTheme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+      aria-pressed={resolvedTheme === "dark"}
+      className={`inline-flex h-8 w-8 items-center justify-center rounded-full border bg-muted text-muted-foreground hover:bg-background hover:text-foreground shadow-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-foreground/30 ${className ?? ""}`}
+    >
+      {resolvedTheme === "dark" ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
+      <span className="sr-only">Toggle theme</span>
+    </button>
   )
 }
 
